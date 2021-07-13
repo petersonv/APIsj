@@ -5,6 +5,6 @@ class UsersController < ApplicationController
             email: params[:email],
             password: params[:password]
         )
-        render json: user
+        render json: user, status: :created
     end
 end
